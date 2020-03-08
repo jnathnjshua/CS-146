@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Submit</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+       
+    </head>
+    <body>
+        <header>
+            <div class="NavLinks">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Towns<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="Town1.html">Treeland</a>
+                        <a href="Town2.html">Treetop</a>
+                        <a href="Town3.html">Snowland</a>
+                        <a href="Town4.html">Snowtops</a>
+                    </div>
+                </div>
+                <div class = "dropdown">
+                    <button class="dropbtn">Maps<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="TreelandMap.html">Treeland</a>
+                        <a href="TreetopMap.html">Treetop</a>
+                        <a href="SnowlandMap.html">Snowland</a>
+                        <a href="SnowtopsMap.html">Snowtops</a>
+                    </div>
+                </div>
+                <a href="contactInfo.html">Contact Info</a>
+                <a href="submission.html">Recommend Town</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+        </header>
+            <p>If you would like to submit a recommendation for a town you may do so here.</p>
+            <form id="submission_form">
+                <div>What town would you like to see a map and / or schedule of?</div>
+                <input type="text" id="town_name" required>
+                <div>Please enter a URL which contains information regarding the snow plowing schedule for that town.</div>
+                <input type="text" id="schedule_url" required>
+                <div>If possible, please provide a map of the town in the form of an image URL.</div>
+                <input type="text" id="image_url" required>
+                <br>
+                <button id="submission_button">Submit</button>
+            </form>
+            <div id="form_results">
+
+            </div>
+            <script src="interact.js"></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Feedback</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="NavLinks">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Towns<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="Town1.html">Treeland</a>
+                        <a href="Town2.html">Treetop</a>
+                        <a href="Town3.html">Snowland</a>
+                        <a href="Town4.html">Snowtops</a>
+                    </div>
+                </div>
+                <div class = "dropdown">
+                    <button class="dropbtn">Maps<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="TreelandMap.html">Treeland</a>
+                        <a href="TreetopMap.html">Treetop</a>
+                        <a href="SnowlandMap.html">Snowland</a>
+                        <a href="SnowtopsMap.html">Snowtops</a>
+                    </div>
+                </div>
+                <a href="contactInfo.html">Contact Info</a>
+                <a href="submission.html">Recommend Town</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+        </header>
+        <!--The contact info page is given the ability to gain user input-->
+        <form class = "info" id = "feedback_form">
+            Enter your name:<br>
+            <!--Allows user to type in their name-->
+            <input type="text" id="name_input" name="name_input" required/>
+            <br>
+            <!--Allows user to select the Yes option or No option-->
+            Did we have your town listed on our website?
+            <br>
+            <input type="radio" id="listed" name="townListed" value="Yes" required/>
+            Yes
+            <br>
+            <input type="radio" id="notListed" name="townListed" value="No" required/>
+            No
+            <br>
+            Any other comments?
+            <br>
+            <!--Feedback section where a user could type comments in the box-->
+            <textarea id="comments" rows="20"></textarea>
+            <br>
+            <!--User can select which town is presented with the best schedule and map-->
+            Which town had the best schedule and map?
+            <br>
+            <select id="fav_town">
+                <option id="Treeland">Treeland</option>
+                <option id="Treetop">Treetop</option>
+                <option id="Snowland">Snowland</option>
+                <option id="Snowtops">Snowtops</option>
+            </select>
+            <br>
+            <button type="submit" id="feedback_button">Send</button>
+        </form>
+        <script src="interact.js"></script>
+    </body>
+</html>
